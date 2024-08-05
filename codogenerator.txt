@@ -1,1 +1,2 @@
 dotnet aspnet-codegenerator razorpage -m Category -dc Northwindiaroslav.Data.NorthwindIaroslavSQLiteContext -udl -outDir Pages\Categories --referenceScriptLibraries -sqlite
+dotnet aspnet-codegenerator razorpage -m Customer -dc Northwindiaroslav.Data.NorthwindIaroslavSQLiteContext -udl -outDir Pages\Customers --referenceScriptLibraries -sqlite
