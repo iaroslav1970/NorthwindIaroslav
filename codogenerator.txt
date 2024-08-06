@@ -2,7 +2,6 @@ dotnet aspnet-codegenerator razorpage -m Category -dc Northwindiaroslav.Data.Nor
 dotnet aspnet-codegenerator razorpage -m Customer -dc Northwindiaroslav.Data.NorthwindIaroslavSQLiteContext -udl -outDir Pages\Customers --referenceScriptLibraries -sqlite
 dotnet aspnet-codegenerator razorpage -m Employee -dc Northwindiaroslav.Data.NorthwindIaroslavSQLiteContext -udl -outDir Pages\Employees --referenceScriptLibraries -sqlite
 dotnet aspnet-codegenerator razorpage -m Order -dc Northwindiaroslav.Data.NorthwindIaroslavSQLiteContext -udl -outDir Pages\Orders --referenceScriptLibraries -sqlite
-dotnet aspnet-codegenerator razorpage -m OrderDetail -dc Northwindiaroslav.Data.NorthwindIaroslavSQLiteContext -udl -outDir Pages\OrderDetails --referenceScriptLibraries -sqlite
 dotnet aspnet-codegenerator razorpage -m Product -dc Northwindiaroslav.Data.NorthwindIaroslavSQLiteContext -udl -outDir Pages\Products --referenceScriptLibraries -sqlite
 dotnet aspnet-codegenerator razorpage -m Shipper -dc Northwindiaroslav.Data.NorthwindIaroslavSQLiteContext -udl -outDir Pages\Shippers --referenceScriptLibraries -sqlite
 dotnet aspnet-codegenerator razorpage -m Supplier -dc Northwindiaroslav.Data.NorthwindIaroslavSQLiteContext -udl -outDir Pages\Suppliers --referenceScriptLibraries -sqlite
