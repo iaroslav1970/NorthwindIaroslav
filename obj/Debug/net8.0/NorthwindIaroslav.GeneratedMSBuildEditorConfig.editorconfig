@@ -162,6 +162,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/IAROSLAV-PROJECT_2024/NorthwindIaroslav/Pages/Shippers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hpcHBlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IAROSLAV-PROJECT_2024/NorthwindIaroslav/Pages/Shippers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hpcHBlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IAROSLAV-PROJECT_2024/NorthwindIaroslav/Pages/Shippers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hpcHBlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IAROSLAV-PROJECT_2024/NorthwindIaroslav/Pages/Shippers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hpcHBlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IAROSLAV-PROJECT_2024/NorthwindIaroslav/Pages/Shippers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hpcHBlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/IAROSLAV-PROJECT_2024/NorthwindIaroslav/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
