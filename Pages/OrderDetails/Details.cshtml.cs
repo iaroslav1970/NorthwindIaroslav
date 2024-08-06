@@ -28,7 +28,10 @@ namespace NorthwindIaroslav.Pages.OrderDetails
                 return NotFound();
             }
 
-            var orderdetail = await _context.OrderDetails.FirstOrDefaultAsync(m => m.OrderDetailID == id);
+            var orderdetail = await _context.OrderDetails
+            .Include(p => p.Order)  
+            .Include(p => p.Product)   
+            .FirstOrDefaultAsync(m => m.OrderDetailID == id);
             if (orderdetail == null)
             {
                 return NotFound();

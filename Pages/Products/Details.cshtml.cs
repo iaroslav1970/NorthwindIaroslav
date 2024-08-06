@@ -11,33 +11,38 @@ using Northwindiaroslav.Data;
 namespace NorthwindIaroslav.Pages.Products
 {
     public class DetailsModel : PageModel
+{
+    private readonly Northwindiaroslav.Data.NorthwindIaroslavSQLiteContext _context;
+
+    public DetailsModel(Northwindiaroslav.Data.NorthwindIaroslavSQLiteContext context)
     {
-        private readonly Northwindiaroslav.Data.NorthwindIaroslavSQLiteContext _context;
-
-        public DetailsModel(Northwindiaroslav.Data.NorthwindIaroslavSQLiteContext context)
-        {
-            _context = context;
-        }
-
-        public Product Product { get; set; } = default!;
-
-        public async Task<IActionResult> OnGetAsync(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var product = await _context.Products.FirstOrDefaultAsync(m => m.ProductID == id);
-            if (product == null)
-            {
-                return NotFound();
-            }
-            else
-            {
-                Product = product;
-            }
-            return Page();
-        }
+        _context = context;
     }
+
+    public Product Product { get; set; } = default!;
+
+    public async Task<IActionResult> OnGetAsync(int? id)
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        var product = await _context.Products
+            .Include(p => p.Category)  // Завантаження даних про категорію
+            .Include(p => p.Supplier)  // Завантаження даних про постачальника
+            .FirstOrDefaultAsync(m => m.ProductID == id);
+
+        if (product == null)
+        {
+            return NotFound();
+        }
+        else
+        {
+            Product = product;
+        }
+        return Page();
+    }
+}
+
 }
